@@ -4,8 +4,8 @@ import { resolveCollision } from './utils-elastic-collision.js';
 const canvas = document.querySelector('canvas')
 const c = canvas.getContext('2d')
 
-canvas.width = innerWidth
-canvas.height = innerHeight
+canvas.width = document.body.getBoundingClientRect().width
+canvas.height = document.body.getBoundingClientRect().height
 
 const mouse = {
     x: innerWidth / 2,
